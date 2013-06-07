@@ -8,9 +8,7 @@
 static unsigned short tbl[MAXSZ];
 
 int getcyclength(unsigned long n) {
-	return (	(n<MAXSZ && tbl[n]	) 
-									?	tbl[n] 
-									: computecyclength(n));
+	return ((n<MAXSZ && tbl[n]) ?	tbl[n] : computecyclength(n));
 }	
 
 int computecyclength(unsigned long n){
